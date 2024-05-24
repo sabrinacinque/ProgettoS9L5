@@ -1,0 +1,23 @@
+<div *ngIf="carsArr.length === 0" class="alert alert-info">
+  Caricamento in corso
+</div>
+
+<div class="row text-center">
+  <div class="col">
+    <img src="../../../assets/img/luigiLogo.png" alt="logo immagine mario bros" class="logoPaginaBrand">
+  </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-2" *ngIf="carsArr.length > 0">
+  <div class="col" *ngFor="let car of carsArr" class="my-5">
+    <div class="card border-black mx-auto" style="width: 28rem;">
+      <img [src]="car.modelImage" class="card-img-top sizeImg" alt="Car Image" >
+      <div class="card-body text-center" [ngClass]="{'bg-success': car.available, 'bg-danger': !car.available}">        <h5 class="card-title">Modello <br>{{ car.model }}</h5>
+        <p>Brand : {{car.brand}}</p>
+        <p>Anno : {{car.year}}</p>
+        <h4>{{car.price}} <img src="../../../assets/img/monete.png" alt="immagine monete" class="monete"></h4>
+        <a class="btn btn-primary   " [routerLink]="['/car', car.model]">Dettaglio</a>
+      </div>
+    </div>
+  </div>
+</div>

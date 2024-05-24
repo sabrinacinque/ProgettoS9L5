@@ -1,0 +1,56 @@
+[
+    {
+        "brand": "Mariobrand",
+        "brandLogo": "https://picsum.photos/100/100?random=7",
+        "model": "Turbo Turbo",
+        "modelImage": "https://www.mariowiki.it/images/a/a4/MKT-Tuboturbo.png",
+        "year": 2015,
+        "price": 7500,
+        "available": false
+    },
+    {
+        "brand": "Mariobrand",
+        "brandLogo": "https://picsum.photos/100/100?random=7",
+        "model": "Fungo Mobile",
+        "modelImage": "https://www.mariowiki.it/images/7/72/MKT-Fungomobile.png",
+        "year": 2010,
+        "price": 3500,
+        "available": true
+    },
+    {
+        "brand": "Luigibrand",
+        "brandLogo": "https://picsum.photos/100/100?random=8",
+        "model": "Cabrio Koopa",
+        "modelImage": "https://www.mariowiki.it/images/9/9b/MKT-Cabrio-Koopa.png",
+        "year": 2009,
+        "price": 5200,
+        "available": false
+    },
+    {
+        "brand": "Luigibrand",
+        "brandLogo": "https://picsum.photos/100/100?random=8",
+        "model": "Coccinello Volante",
+        "modelImage": "https://www.mariowiki.it/images/c/c2/MKT-Coccinello-volante-kart.png",
+        "year": 2014,
+        "price": 9700,
+        "available": true
+    },
+    {
+        "brand": "Toadbrand",
+        "brandLogo": "https://picsum.photos/100/100?random=9",
+        "model": "Fungomobile",
+        "modelImage": "https://www.mariowiki.it/images/e/e0/MKT-Fungomobile-rosa.png",
+        "year": 2012,
+        "price": 4300,
+        "available": true
+    },
+    {
+        "brand": "Toadbrand",
+        "brandLogo": "https://picsum.photos/100/100?random=9",
+        "model": "Nastronave",
+        "modelImage": "https://www.mariowiki.it/images/5/5d/MKT-Nastronave-Rosalinda.png",
+        "year": 2020,
+        "price": 41700,
+        "available": false
+    }
+]
