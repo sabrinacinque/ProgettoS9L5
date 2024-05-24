@@ -6,7 +6,7 @@
   Caricamento in corso
 </div>
 
-<div class="row row-cols-1 row-cols-md-2" *ngIf="randomCars.length > 0">
+<div class="row row-cols-1 row-cols-lg-2" *ngIf="randomCars.length > 0">
   <div class="col" *ngFor="let car of randomCars" class="my-5">
     <div class="card border-black mx-auto" style="width: 28rem;">
       <img [src]="car.modelImage" class="card-img-top sizeImg" alt="Car Image" >
