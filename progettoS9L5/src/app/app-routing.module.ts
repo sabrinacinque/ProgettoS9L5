@@ -39,7 +39,6 @@ const routes: Routes = [
     title:'car Detail'
   },
   {
-
     path:'**',
     component: Page404Component,
     title:'Not Found'
