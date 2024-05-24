@@ -6,7 +6,7 @@ import { iCar } from './Models/i-car';
 })
 export class CarsService {
 
-  apiUrl: string = 'assets/db.json'; // Assicurati che il percorso sia corretto
+  apiUrl: string = '../assets/db.json';
   carsArr: iCar[] = [];
 
   constructor() {
@@ -27,6 +27,8 @@ export class CarsService {
     }
   }
 
+
+  //funzione per avere le cars
   async getAll(): Promise<iCar[]> {
     if (this.carsArr.length === 0) {
       await this.getFromJson();
@@ -35,6 +37,7 @@ export class CarsService {
   }
 
 
+  //funzione per prenderela marca dell'auto e filtrare l'array sulla pagina corrispindente al brand
   async getBrand(brand : string): Promise<iCar[]> {
     if (this.carsArr.length === 0) {
       await this.getFromJson();
@@ -43,6 +46,7 @@ export class CarsService {
   }
 
 
+  //funzione per prendere il modello dell'auto(dato che non c'è l'id ) e portarlo sulla pagina dettagli
   async getByModel(model: string): Promise<iCar | undefined> {
     if (this.carsArr.length === 0) {
       await this.getFromJson();

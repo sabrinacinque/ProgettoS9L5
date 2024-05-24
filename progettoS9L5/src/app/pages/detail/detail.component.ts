@@ -10,10 +10,6 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetailComponent implements OnInit {
   currentCar!: iCar;
-  returnUrl!: string;
-  cardColor!: string;
-  history: any;
-  window: any;
 
   constructor(
     private route: ActivatedRoute,
